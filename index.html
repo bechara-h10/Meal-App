@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/8797b4aa7a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Meal App</title>
+  </head>
+  <body>
+    <main>
+      <div class="search-bar-container active">
+        <input type="text" placeholder="Type Dish Name" id="dish-name-input" />
+        <button class="search-button">Search</button>
+        <span class="error-text">Invalid input</span>
+      </div>
+      <div class="ingredients-container">
+        <div class="recipe-title"></div>
+        <div class="recipe-image"></div>
+        <h3 class="ingredients-list-title">Ingredients:</h3>
+        <div class="ingredients"></div>
+        <div class="buttons-container">
+          <button class="go-back-to-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <button class="recipe-button">Check Recipe</button>
+        </div>
+      </div>
+      <div class="recipe-container">
+        <h3>Recipe:</h3>
+        <button class="return-button">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="instructions"></div>
+      </div>
+    </main>
+  </body>
+</html>
