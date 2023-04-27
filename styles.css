@@ -175,3 +175,11 @@ span.error-text {
 span.error-text.active {
   display: flex;
 }
+
+@media (width <= 600px) {
+  div.search-bar-container,
+  div.ingredients-container,
+  div.recipe-container {
+    width: 300px;
+  }
+}
