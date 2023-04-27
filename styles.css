@@ -9,12 +9,12 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: rgb(200, 200, 0);
+  height: 100%;
+  background-color: #ffb92a;
 }
 
 main {
   width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +24,7 @@ main {
 
 div.search-bar-container {
   width: 600px;
-  background-color: rgb(25, 25, 116);
+  background-color: #1e293b;
   padding: 20px 10px;
   border-radius: 5px;
   display: none;
@@ -34,7 +34,7 @@ div.search-bar-container input#dish-name-input {
   width: 75%;
   height: 30px;
   font-family: 'Poppins', sans-serif;
-  background-color: rgb(25, 25, 116);
+  background-color: transparent;
   border: solid 1px grey;
   border-radius: 5px;
   color: white;
@@ -48,10 +48,10 @@ div.search-bar-container button.search-button {
   width: 20%;
   height: 30px;
   margin-left: 20px;
-  background-color: rgb(200, 200, 0);
+  background-color: #ffb92a;
   border: none;
   border-radius: 5px;
-  color: rgb(25, 25, 116);
+  color: #1e293b;
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
   cursor: pointer;
@@ -63,21 +63,21 @@ div.ingredients-container {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgb(25, 25, 116);
+  background-color: #1e293b;
   border-radius: 5px;
   padding: 20px 15px;
 }
 
 div.ingredients-container div.recipe-title {
   width: 100%;
-  background-color: rgb(200, 200, 0);
+  background-color: #ffb92a;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 10px;
-  color: rgb(25, 25, 116);
+  color: #1e293b;
 }
 
 div.ingredients-container div.recipe-title h3,
@@ -122,17 +122,17 @@ div.ingredients-container div.buttons-container {
 div.ingredients-container button.recipe-button,
 div.ingredients-container button.go-back-to-search {
   padding: 10px 20px;
-  background-color: rgb(200, 200, 0);
+  background-color: #ffb92a;
   border: none;
   border-radius: 5px;
   font-weight: 700;
-  color: rgb(25, 25, 116);
+  color: #1e293b;
   cursor: pointer;
 }
 
 div.recipe-container {
   width: 600px;
-  background-color: rgb(25, 25, 116);
+  background-color: #1e293b;
   border-radius: 5px;
   color: white;
   position: relative;
@@ -144,8 +144,8 @@ div.recipe-container {
 }
 
 div.recipe-container button.return-button {
-  color: rgb(25, 25, 116);
-  background-color: rgb(200, 200, 0);
+  color: #1e293b;
+  background-color: #ffb92a;
   border: none;
   border-radius: 5px;
   position: absolute;

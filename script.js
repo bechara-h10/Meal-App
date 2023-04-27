@@ -16,7 +16,11 @@ const URL = `https://www.themealdb.com/api/json/v1/1/search.php?s=`
 searchButton.addEventListener('click', async () => {
   const mealData = await searchForRecipe(dishNameInput.value)
   dishNameInput.value = ''
+  searchButton.disabled = true
   addRecipeToPage(mealData)
+  setTimeout(() => {
+    searchButton.disabled = false
+  }, 3000)
 })
 
 recipeButton.addEventListener('click', () => {
