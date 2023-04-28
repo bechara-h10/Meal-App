@@ -248,4 +248,8 @@ div.search-bar-container button.search-button div.search-button-text {
   div.recipe-container {
     width: 300px;
   }
+
+  body {
+    overflow-x: auto;
+  }
 }
