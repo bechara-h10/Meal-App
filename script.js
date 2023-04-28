@@ -10,17 +10,18 @@ const recipeButton = document.querySelector('.recipe-button')
 const returnButton = document.querySelector('.return-button')
 const instructionsDiv = document.querySelector('.instructions')
 const goBackToSearchButton = document.querySelector('.go-back-to-search')
+const searchButtonTextDiv = document.querySelector('.search-button-text')
+const loaderCenterDiv = document.querySelector('.center')
 const errorText = document.querySelector('.error-text')
 const URL = `https://www.themealdb.com/api/json/v1/1/search.php?s=`
 
 searchButton.addEventListener('click', async () => {
+  searchButton.disabled = true
+  loaderCenterDiv.classList.add('active')
+  searchButtonTextDiv.classList.remove('active')
   const mealData = await searchForRecipe(dishNameInput.value)
   dishNameInput.value = ''
-  searchButton.disabled = true
   addRecipeToPage(mealData)
-  setTimeout(() => {
-    searchButton.disabled = false
-  }, 3000)
 })
 
 recipeButton.addEventListener('click', () => {
@@ -37,6 +38,9 @@ goBackToSearchButton.addEventListener('click', () => {
   ingredientsDiv.classList.remove('active')
   recipeDiv.classList.remove('active')
   searchBarContainer.classList.add('active')
+  searchButtonTextDiv.classList.add('active')
+  loaderCenterDiv.classList.remove('active')
+  searchButton.disabled = false
   resetPage()
 })
 

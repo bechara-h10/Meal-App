@@ -16,8 +16,13 @@
     <main>
       <div class="search-bar-container active">
         <input type="text" placeholder="Type Dish Name" id="dish-name-input" />
-        <button class="search-button">Search</button>
-        <span class="error-text">Invalid input</span>
+        <button class="search-button">
+          <div class="search-button-text active">Search</div>
+          <div class="center">
+            <div class="loader"></div>
+          </div>
+        </button>
+        <span class="error-text">Invalid input </span>
       </div>
       <div class="ingredients-container">
         <div class="recipe-title"></div>
